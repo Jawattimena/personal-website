@@ -28,3 +28,12 @@ Deze week heb ik ook nieuwe dingen geleerd, zoals popovers, scroll-animaties en 
 Na vrijdag voelde ik me een stuk rustiger, omdat de knoppen (snaren) nu functioneel zijn en ik al een begin heb gemaakt met de styling. Daardoor begint mijn website echt ergens op te lijken, en daar ben ik trots op.
 
 Daarnaast hebben we ook bij elkaar mogen kijken. Ik heb veel mooie en sterke projecten gezien, en sommige klasgenoten hebben al ontzettend veel neergezet. Dat was erg inspirerend om te zien.
+
+## Dag 4
+
+Vandaag heb ik gewerkt aan het maken van een light- en dark mode voor mijn project. Daarnaast heb ik een kleine workshop gevolgd over het koppelen en filteren van een API. Tijdens deze workshop heb ik geleerd hoe ik een API kan koppelen en hoe ik binnen de API data kan filteren.
+
+Ook heb ik gewerkt aan het toevoegen van geluid via JavaScript. Ik heb verschillende geluidjes gemaakt, zoals het geluid van snaren, en deze gekoppeld aan een mouseover-effect. Hier was ik een paar uur mee bezig. De workshop duurde ongeveer een uur.
+Vandaag heb ik vooral geleerd hoe ik geluid kan koppelen aan een mouseover met behulp van JavaScript.
+
+Morgen ga ik verder met het afmaken van de light- en dark mode en ga ik de API koppelen aan mijn project.
