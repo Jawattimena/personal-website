@@ -8,108 +8,74 @@
   </head>
 
   <body>
-    <nav></nav>
     <main>
       <img src="img/svg-assets/klankgat.svg" id="klankgat" />
       <img src="img/svg-assets/brug.svg" id="brug" />
 
       <div class="snaren">
+
+        <!-- snaar-low-e -->
+        <audio id="snaar-low-e-sound" src="audio/snaar-low-e.mp3"></audio>
         <button
-          popovertarget="music-dialog"
+          popovertarget="popover-profiel"
           popovertargetaction="show"
-          aria-label="toon leerdoelen"
+          aria-label="toon profiel van de speler"
           id="snaar-low-e"
           class="snaar"
         >
-          <img src="img/svg-assets/brugpin.svg" alt="" class="brugpin" />
+          <img src="img/svg-assets/brugpin.svg" class="brugpin" />
         </button>
-        <audio id="snaar-low-e-sound" src="audio/snaar-low-e.mp3"></audio>
-        <!-- snaar-low-e -->
 
-        <div popover id="music-dialog" class="popovers">
-          <h1>Favoriete nummer</h1>
-          <p>Dit is mijn favoriete nummer</p>
-          <button popovertarget="music-dialog" popovertargetaction="hide">
-            X
-          </button>
-        </div>
-
+        <!-- snaar-a -->
+        <audio id="snaar-a-sound" src="audio/snaar-a.mp3"></audio>
         <button
-          popovertarget="fav-chaps"
+          popovertarget="popover-entertainment"
           popovertargetaction="show"
-          aria-label="toon favoriete eten"
+          aria-label="toon favoriete dingen om te doen in vrije tijd" 
           id="snaar-a"
           class="snaar"
         >
           <img src="img/svg-assets/brugpin.svg" alt="" class="brugpin" />
         </button>
-        <audio id="snaar-a-sound" src="audio/snaar-a.mp3"></audio>
-        <!-- snaar-a -->
 
-        <div popover id="fav-chaps" class="popovers">
-          <h1>Favoriete chaps</h1>
-          <p>Dit is mijn favoriete nummer</p>
-          <button popovertarget="fav-chaps" popovertargetaction="hide">
-            X
-          </button>
-        </div>
-
+        <!-- snaar-d -->
+        <audio id="snaar-d-sound" src="audio/snaar-d.mp3"></audio>
         <button
-          popovertarget="afkomst"
+          popovertarget="popover-eten"
           popovertargetaction="show"
-          aria-label="toon afkomst"
+          aria-label="toon favoriete eten en seizoen van speler"
           id="snaar-d"
           class="snaar"
         >
           <img src="img/svg-assets/brugpin.svg" alt="" class="brugpin" />
         </button>
-        <audio id="snaar-d-sound" src="audio/snaar-d.mp3"></audio>
-        <!-- snaar-d -->
 
-        <div popover id="afkomst" class="popovers">
-          <h1>Afkomst</h1>
-          <p>Dit is mijn favoriete nummer</p>
-          <button popovertarget="afkomst" popovertargetaction="hide">X</button>
-        </div>
-
+        <!-- snaar-g -->  
+        <audio id="snaar-g-sound" src="audio/snaar-g.mp3"></audio>
         <button
-          popovertarget="fav-film"
+          popovertarget="popover-tech"
           popovertargetaction="show"
-          aria-label="toon favoriete film"
+          aria-label="toon tech informatie van de speler"
           id="snaar-g"
           class="snaar"
         >
           <img src="img/svg-assets/brugpin.svg" alt="" class="brugpin" />
         </button>
-        <audio id="snaar-g-sound" src="audio/snaar-g.mp3"></audio>
-        <!-- snaar-g -->
 
-        <div popover id="fav-film" class="popovers">
-          <h1>film</h1>
-          <p>Dit is mijn favoriete nummer</p>
-          <button popovertarget="fav-film" popovertargetaction="hide">X</button>
-        </div>
-
+        <!-- snaar-b -->
+        <audio id="snaar-b-sound" src="audio/snaar-b.mp3"></audio>
         <button
-          popovertarget="fav-vakantieland"
+          popovertarget="popover-fun-facts"
           popovertargetaction="show"
-          aria-label="toon favoriete vakantie land"
+          aria-label="toon fun facts van de speler"
           id="snaar-b"
           class="snaar"
         >
           <img src="img/svg-assets/brugpin.svg" alt="" class="brugpin" />
         </button>
-        <audio id="snaar-b-sound" src="audio/snaar-b.mp3"></audio>
-        <!-- snaar-b -->
-
-        <div popover id="fav-vakantieland" class="popovers">
-          <h1>vakantie</h1>
-          <p>Dit is mijn favoriete nummer</p>
-          <button popovertarget="fav-vakantieland" popovertargetaction="hide">
-            X
-          </button>
-        </div>
-
+        
+        <!-- snaar-high-e -->
+        <audio id="snaar-high-e-sound" src="audio/snaar-high-e.mp3"></audio>
         <button
           popovertarget="leerdoelen"
           popovertargetaction="show"
@@ -119,8 +85,6 @@
         >
           <img src="img/svg-assets/brugpin.svg" alt="" class="brugpin" />
         </button>
-        <audio id="snaar-high-e-sound" src="audio/snaar-high-e.mp3"></audio>
-        <!-- snaar-high-e -->
 
         <div popover id="leerdoelen" class="popovers">
           <h1>leerdoelen</h1>
