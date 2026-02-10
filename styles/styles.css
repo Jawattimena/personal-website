@@ -1,6 +1,33 @@
+:root {
+  font-family: system-ui;
+  color: white;
+
+  color-scheme: light dark;
+
+  --white: white;
+  --black: black;
+
+  --popover-bg: rgb(33, 33, 33, 0.8);
+  --popover-border: rgb(50, 50, 50);
+  --dark-button-bg: rgb(90, 90, 90);
+  --snaren-dark-color: #f2d579;
+
+  --electric-guitar-bg: rgb(255, 246, 233);
+  --popover-bg-light: rgba(255, 245, 235, 0.8);
+  --popover-border-light: rgba(196, 196, 196, 0.8);
+  --light-button-bg: rgb(226, 209, 187);
+  --light-hover-button: rgb(226, 209, 187);
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
+  background-color: light-dark(var(--electric-guitar-bg), var(--black));
+  width: 100vw;
 }
 
 main {
@@ -10,10 +37,11 @@ main {
   align-items: center;
   justify-content: start;
   padding: 0em;
-  /* background-image: url(/img/foto.png); */
 }
 
-.snares {
+/* snaren ---------------------------------------------------------------------------*/
+
+.snaren {
   width: 60%;
   height: 100vh;
 
@@ -23,7 +51,7 @@ main {
   gap: 0.5em;
 }
 
-.snare {
+.snaar {
   height: 80vh;
   width: 2em;
 
@@ -42,7 +70,7 @@ main {
   &::after {
     content: "";
 
-    background-color: goldenrod;
+    background-color: var(--snaren-dark-color);
 
     width: 0.3em;
     height: 100%;
@@ -52,8 +80,46 @@ main {
   }
 }
 
+#snaar-low-e:hover {
+  &::after {
+    background-color: red;
+  }
+}
+
+#snaar-a:hover {
+  &::after {
+    background-color: red;
+  }
+}
+
+#snaar-d:hover {
+  &::after {
+    background-color: red;
+  }
+}
+
+#snaar-g:hover {
+  &::after {
+    background-color: red;
+  }
+}
+
+#snaar-b:hover {
+  &::after {
+    background-color: red;
+  }
+}
+
+#snaar-high-e:hover {
+  &::after {
+    background-color: red;
+  }
+}
+
+/* Popovers ---------------------------------------------------------------------------*/
+
 .popovers {
-  width: 60%;
+  width: 70%;
   margin: 0em;
   padding: 2em;
   max-width: 100%;
@@ -63,10 +129,13 @@ main {
   align-self: center;
   justify-self: center;
 
-  border: 1px solid lightgray;
+  border: light-dark(var(--popover-border-light), var(--popover-border)) 1px
+    solid;
   border-radius: 0.3em;
+  color: light-dark(var(--black), var(--white));
 
-  background-color: white;
+  background-color: light-dark(var(--popover-bg-light), var(--popover-bg));
+  backdrop-filter: blur(10px);
 }
 
 :popover-open {
@@ -75,7 +144,9 @@ main {
   grid-template-areas:
     "image image"
     "titel knop"
-    "tekst tekst";
+    "tekst1 tekst1"
+    "kop  kop"
+    "tekst2 tekst2";
 
   align-items: start;
 }
@@ -88,13 +159,36 @@ main {
   grid-area: titel;
 }
 
-.popovers p {
-  grid-area: tekst;
+.popovers h2 {
+  grid-area: kop;
+}
+
+.tekst1 {
+  grid-area: tekst1;
+  line-height: 2em;
+}
+
+.tekst2 {
+  grid-area: tekst2;
+  line-height: 2em;
 }
 
 .popovers button {
   grid-area: knop;
   align-self: center;
+  border-radius: 20em;
+  padding: 0.7em;
+  background-color: light-dark(var(--light-button-bg), var(--dark-button-bg));
+  border: none;
+  color: light-dark(var(--white), var(--black));
+}
+
+.popovers button:hover {
+  grid-area: knop;
+  align-self: center;
+  border-radius: 20em;
+  background-color: light-dark (var(--light-hover-button), var(--white));
+  border: none;
 }
 
 .popovers img {
@@ -102,36 +196,26 @@ main {
   width: 100%;
   height: 20em;
   object-fit: cover;
+  border-radius: 0.3em;
+  border: var(--popover-border);
 }
 
-.circle {
-  width: 80vw;
-  height: auto;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  background-color: black;
-}
+/* SVG Elementen van gitaar ------------------------------------------------------------------*/
 
-.circle-ring {
-  width: 90vw;
-  height: auto;
-  aspect-ratio: 1/1;
-
-  position: absolute;
-
-  border-radius: 50%;
-  background-color: none;
-  border: 1px solid black;
-}
-
-#bridge {
+#brug {
   position: absolute;
   margin: 75vh 0em 0em 0em;
   width: 480px;
 }
 
-#gat {
+#klankgat {
   position: absolute;
-  margin-left: 7.5vw;
-  width: 550px;
+  margin: auto;
+  width: 650px;
+}
+
+.brugpin {
+  position: absolute;
+  margin: 79vh 0em 0em 0em;
+  width: 30px;
 }

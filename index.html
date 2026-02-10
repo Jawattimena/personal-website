@@ -4,33 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
-
     <title>Joshua Wattimena</title>
   </head>
 
   <body>
     <nav></nav>
     <main>
-      <!-- <div class="circle"></div>
-      <div class="circle-ring"></div> -->
+      <img src="img/svg-assets/klankgat.svg" id="klankgat" />
+      <img src="img/svg-assets/brug.svg" id="brug" />
 
-      <img src="img/svg-assets/gat.svg" id="gat" />
-      <img src="img/svg-assets/brug.svg" id="bridge" />
-
-      <div class="snares">
+      <div class="snaren">
         <button
           popovertarget="music-dialog"
           popovertargetaction="show"
           aria-label="toon leerdoelen"
-          class="snare"
-        ></button>
-        <!-- snare-low-e -->
+          id="snaar-low-e"
+          class="snaar"
+        >
+          <img src="img/svg-assets/brugpin.svg" alt="" class="brugpin" />
+        </button>
+        <audio id="snaar-low-e-sound" src="audio/snaar-low-e.mp3"></audio>
+        <!-- snaar-low-e -->
 
         <div popover id="music-dialog" class="popovers">
           <h1>Favoriete nummer</h1>
           <p>Dit is mijn favoriete nummer</p>
           <button popovertarget="music-dialog" popovertargetaction="hide">
-            x
+            X
           </button>
         </div>
 
@@ -38,15 +38,19 @@
           popovertarget="fav-chaps"
           popovertargetaction="show"
           aria-label="toon favoriete eten"
-          class="snare"
-        ></button>
-        <!-- snare-a -->
+          id="snaar-a"
+          class="snaar"
+        >
+          <img src="img/svg-assets/brugpin.svg" alt="" class="brugpin" />
+        </button>
+        <audio id="snaar-a-sound" src="audio/snaar-a.mp3"></audio>
+        <!-- snaar-a -->
 
         <div popover id="fav-chaps" class="popovers">
           <h1>Favoriete chaps</h1>
           <p>Dit is mijn favoriete nummer</p>
           <button popovertarget="fav-chaps" popovertargetaction="hide">
-            x
+            X
           </button>
         </div>
 
@@ -54,43 +58,55 @@
           popovertarget="afkomst"
           popovertargetaction="show"
           aria-label="toon afkomst"
-          class="snare"
-        ></button>
-        <!-- snare-d -->
+          id="snaar-d"
+          class="snaar"
+        >
+          <img src="img/svg-assets/brugpin.svg" alt="" class="brugpin" />
+        </button>
+        <audio id="snaar-d-sound" src="audio/snaar-d.mp3"></audio>
+        <!-- snaar-d -->
 
         <div popover id="afkomst" class="popovers">
           <h1>Afkomst</h1>
           <p>Dit is mijn favoriete nummer</p>
-          <button popovertarget="afkomst" popovertargetaction="hide">x</button>
+          <button popovertarget="afkomst" popovertargetaction="hide">X</button>
         </div>
 
         <button
           popovertarget="fav-film"
           popovertargetaction="show"
           aria-label="toon favoriete film"
-          class="snare"
-        ></button>
-        <!-- snare-g -->
+          id="snaar-g"
+          class="snaar"
+        >
+          <img src="img/svg-assets/brugpin.svg" alt="" class="brugpin" />
+        </button>
+        <audio id="snaar-g-sound" src="audio/snaar-g.mp3"></audio>
+        <!-- snaar-g -->
 
         <div popover id="fav-film" class="popovers">
           <h1>film</h1>
           <p>Dit is mijn favoriete nummer</p>
-          <button popovertarget="fav-film" popovertargetaction="hide">x</button>
+          <button popovertarget="fav-film" popovertargetaction="hide">X</button>
         </div>
 
         <button
           popovertarget="fav-vakantieland"
           popovertargetaction="show"
           aria-label="toon favoriete vakantie land"
-          class="snare"
-        ></button>
-        <!-- snare-b -->
+          id="snaar-b"
+          class="snaar"
+        >
+          <img src="img/svg-assets/brugpin.svg" alt="" class="brugpin" />
+        </button>
+        <audio id="snaar-b-sound" src="audio/snaar-b.mp3"></audio>
+        <!-- snaar-b -->
 
         <div popover id="fav-vakantieland" class="popovers">
           <h1>vakantie</h1>
           <p>Dit is mijn favoriete nummer</p>
           <button popovertarget="fav-vakantieland" popovertargetaction="hide">
-            x
+            X
           </button>
         </div>
 
@@ -98,17 +114,33 @@
           popovertarget="leerdoelen"
           popovertargetaction="show"
           aria-label="toon leerdoelen"
-          class="snare"
-        ></button>
-        <!-- snare-high-e -->
+          id="snaar-high-e"
+          class="snaar"
+        >
+          <img src="img/svg-assets/brugpin.svg" alt="" class="brugpin" />
+        </button>
+        <audio id="snaar-high-e-sound" src="audio/snaar-high-e.mp3"></audio>
+        <!-- snaar-high-e -->
 
         <div popover id="leerdoelen" class="popovers">
           <h1>leerdoelen</h1>
-          <p>Dit is mijn favoriete nummer</p>
-          <button popovertarget="leerdoelen" popovertargetaction="hide">
-            x
-          </button>
-          <img src="img/photo-1594130383459-8e55317a76bf.avif" alt="" />
+          <p class="tekst1">
+            - Responsive maken van een website. <br />
+            - Ik wil een website tot leven laten komen en animaties maken die
+            niet alleen leuk zijn maar ook er toe doen in de gebruikers
+            ervaring.<br />
+            - betere beheersing van HTML, CSS en JavaScript (ES6+).
+          </p>
+          <h2>Uiteindelijke doel</h2>
+          <p class="tekst2">
+            Mijn uiteindelijke doel is om voor de politie te mogen werken met de opgedane kennis van deze minor.
+          </p>
+
+            <button popovertarget="leerdoelen" popovertargetaction="hide">
+              X
+            </button>
+            <img src="img/photo-1594130383459-8e55317a76bf.avif" alt="" />
+          </p>
         </div>
       </div>
     </main>
