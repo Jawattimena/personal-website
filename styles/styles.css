@@ -1,22 +1,39 @@
 :root {
   font-family: system-ui;
-  color: white;
 
-  color-scheme: light dark;
+  --text-color: white;
+  --color-guitar: black;
 
-  --white: white;
-  --black: black;
+  --snaren-color: #f2d579;
+  --snaren-color-hover: red;
 
-  --popover-bg: rgb(33, 33, 33, 0.8);
+  --popover-bg: rgb(33, 33, 33, 0.9);
   --popover-border: rgb(50, 50, 50);
-  --dark-button-bg: rgb(90, 90, 90);
-  --snaren-dark-color: #f2d579;
 
-  --electric-guitar-bg: rgb(255, 246, 233);
-  --popover-bg-light: rgba(255, 245, 235, 0.8);
+  --popover-close-button-bg: rgb(61, 49, 49);
+  --popover-close-button-border: white;
+  --popover-close-button-bg-hover: white;
+  --popover-close-button-border-hover: rgb(33, 33, 33);
+
   --popover-border-light: rgba(196, 196, 196, 0.8);
   --light-button-bg: rgb(226, 209, 187);
   --light-hover-button: rgb(226, 209, 187);
+}
+
+.electric {
+  --text-color: black;
+  --color-guitar: rgb(255, 246, 233);
+
+  --snaren-color: #f2d579;
+  --snaren-color-hover: red;
+
+  --popover-bg: rgba(255, 245, 235, 0.8);
+  --popover-border: rgba(196, 196, 196, 0.8);
+
+  --popover-close-button-bg: white;
+  --popover-close-button-border: rgb(33, 33, 33);
+  --popover-close-button-bg-hover: rgb(33, 33, 33);
+  --popover-close-button-border-hover: white;
 }
 
 * {
@@ -28,7 +45,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: light-dark(var(--electric-guitar-bg), var(--black));
+  background-color: var(--color-guitar);
   width: 100vw;
   overflow-x: hidden;
 }
@@ -77,7 +94,7 @@ img {
   &::after {
     content: "";
 
-    background-color: var(--snaren-dark-color);
+    background-color: var(--snaren-color);
 
     width: 0.3em;
     height: 100%;
@@ -89,37 +106,37 @@ img {
 
 #snaar-low-e:hover {
   &::after {
-    background-color: red;
+    background-color: var(--snaren-color-hover);
   }
 }
 
 #snaar-a:hover {
   &::after {
-    background-color: red;
+    background-color: var(--snaren-color-hover);
   }
 }
 
 #snaar-d:hover {
   &::after {
-    background-color: red;
+    background-color: var(--snaren-color-hover);
   }
 }
 
 #snaar-g:hover {
   &::after {
-    background-color: red;
+    background-color: var(--snaren-color-hover);
   }
 }
 
 #snaar-b:hover {
   &::after {
-    background-color: red;
+    background-color: var(--snaren-color-hover);
   }
 }
 
 #snaar-high-e:hover {
   &::after {
-    background-color: red;
+    background-color: var(--snaren-color-hover);
   }
 }
 
@@ -133,13 +150,12 @@ img {
   align-self: center;
   justify-self: center;
 
-  border: light-dark(var(--popover-border-light), var(--popover-border)) 1px
-    solid;
+  border: var(--popover-border) 1px solid;
   border-radius: 0.3em;
-  color: light-dark(var(--black), var(--white));
+  color: var(--text-color);
 
-  background-color: light-dark(var(--popover-bg-light), var(--popover-bg));
-  backdrop-filter: blur(10px);
+  background-color: var(--popover-bg);
+  backdrop-filter: blur(1em);
   width: 80%;
   padding: 2em;
 
@@ -149,10 +165,6 @@ img {
   grid-template-columns: auto 1fr;
   grid-template-areas:
     "titel knop"
-    "tekst1 image"
-    "tekst1 image"
-    "tekst1 image"
-    "tekst1 image"
     "tekst1 image";
 
   align-items: start;
@@ -173,21 +185,25 @@ img {
       aspect-ratio: 1/1;
       margin: 0em 0em 1em 0em;
     }
-  }
 
-  @media (max-width: 550px) {
-    #avatar {
-      justify-self: center;
-      max-width: 100%;
-      height: auto;
-      aspect-ratio: 1/1;
-      margin: 0em 1em 1em 0em;
-    }
+    @media (max-width: 550px) {
+      #avatar {
+        justify-self: center;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+        margin: 0em 1em 1em 0em;
+      }
 
-    .popovers h2 {
-      font-size: 1vw;
+      .popovers h2 {
+        font-size: 1vw;
+      }
     }
   }
+}
+
+.popovers li {
+  margin: 1em;
 }
 
 :popover-open h2 {
@@ -221,8 +237,8 @@ img {
   background: none;
   appearance: none;
 
-  color: var(--white);
-  border: solid 1px light-dark(var(--black), var(--white));
+  color: var(--popover-close-button-border);
+  border: solid 1px var(--popover-close-button-border);
 }
 
 :popover-open button:hover,
@@ -232,9 +248,9 @@ img {
 
   appearance: none;
 
-  background-color: light-dark(var(--black), var(--white));
-  color: light-dark(var(--white), var(--black));
-  border: solid 1px light-dark(var(--black), var(--white));
+  background-color: var(--popover-close-button-bg-hover);
+  color: var(--popover-close-button-border-hover);
+  border: solid 1px var(--popover-close-button-border-hover);
 
   cursor: pointer;
 }
@@ -243,8 +259,8 @@ img {
   aspect-ratio: 1/1;
   width: auto;
   height: 20em;
-
   border-radius: 20em;
+  border: var(--popover-border);
   justify-self: end;
 }
 
@@ -274,5 +290,158 @@ img {
 .brugpin {
   position: absolute;
   margin: 79vh 0em 0em 0em;
-  width: 30px;
+  width: 25px;
+}
+
+/* Darkmode toggle ---------------------------------------------------------------------------*/
+
+label {
+  width: 7em;
+  height: 3.5em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebebee;
+  border-radius: 200px;
+  box-shadow: inset 0px 3px 7px rgba(0, 0, 0, 0.3),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  justify-self: center;
+}
+
+label::after {
+  content: "";
+  position: absolute;
+
+  top: 0.25em;
+  left: 0.25em;
+  width: 3em;
+  height: 3em;
+
+  background-color: linear-gradient(180deg, #ffffff, #d9d9d9);
+  border-radius: 2.5em;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+input[type="checkbox"] {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type="checkbox"]:checked + label {
+  background-color: gray;
+  transition: all 0.3s ease;
+}
+
+input[type="checkbox"]:checked + label::after {
+  left: 6.75em;
+  transform: translateX(-100%);
+  background-color: grey;
+  transition: all 0.3s ease;
+}
+
+label:active::after {
+  width: 4em;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.light-darkmode {
+  margin: 87vh 0em 0em 0em;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.light-darkmode p {
+  font-size: 1.2em;
+  color: var(--text-color);
+}
+
+label svg {
+  position: absolute;
+  width: 25%;
+  align-items: center;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.acoustic-guitar {
+  left: 0.8em;
+}
+
+.electric-guitar {
+  right: 0.8em;
+  fill: gray;
+}
+
+input:checked + label .acoustic-guitar {
+  fill: lightgray;
+}
+
+input:checked + label .electric-guitar {
+  fill: white;
+}
+
+/* Change ID invoerveld ---------------------------------------------------------------- */
+
+#idchange {
+  grid-area: idchange;
+  display: flex;
+  gap: 0.5em;
+  z-index: 1;
+
+  border: solid 2px rgb(237, 237, 237);
+  background-color: rgb(237, 237, 237);
+
+  appearance: none;
+
+  border-radius: 2em;
+  margin: 2em;
+}
+
+#mijnInvoer {
+  background-color: white;
+  padding: 1em;
+  border-radius: 3em;
+  box-shadow: inset 0px 3px 7px rgba(0, 0, 0, 0.3),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  border: none;
+  width: 7em;
+}
+
+#mijnKnop {
+  width: auto;
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 20em;
+  border: none;
+
+  background: white;
+
+  box-shadow: inset 0px 3px 7px rgba(0, 0, 0, 0.3),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+
+  color: black;
+}
+
+#mijnKnop:hover {
+  background-color: black;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: solid 1px white;
+  color: white;
+}
+
+#mijnKnop:active {
+  background-color: rgb(0, 183, 0);
+  transition: all 0.1s ease;
+  cursor: pointer;
+  border: solid 1px white;
+  color: white;
 }

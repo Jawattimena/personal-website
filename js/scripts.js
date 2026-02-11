@@ -1,10 +1,13 @@
+// Hier haal ik de API op
 let base = "https://fdnd.directus.app/items";
 let endpoint = "/person?filter[id]=";
+
 let id = 298;
 
 let url = base + endpoint + id;
 let main = document.querySelector("main");
 
+// Hier laad ik de popovers in en bewerk ik dus het html bestand.
 async function haalDataOp() {
   let response = await fetch(url);
   let responseJson = await response.json();
@@ -16,11 +19,7 @@ async function haalDataOp() {
   <div popover id="popover-profiel">
   <h2>Persoonlijk Profiel</h2>
   <button popovertarget="popover-profiel" popovertargetaction="hide">X</button>
-  <img
-    id="avatar"
-    src="${dataPersonInDeMinor.avatar}"
-    alt="${dataPersonInDeMinor.name}"
-  />
+  
   <div class="text-veld1">
     <p><strong>Naam:</strong> ${dataPersonInDeMinor.name}</p>
     <p><strong>Geboortedatum:</strong> ${dataPersonInDeMinor.birthdate}</p>
@@ -29,7 +28,11 @@ async function haalDataOp() {
     <p><strong>Vibe emoji:</strong> ${dataPersonInDeMinor.vibe_emoji}</p>
     <p><strong>Favoriete emoji:</strong> ${dataPersonInDeMinor.fav_emoji}</p>
   </div>
-</div>
+  <img
+    id="avatar"
+    src="${dataPersonInDeMinor.avatar}"
+    alt="${dataPersonInDeMinor.name}"
+  />
     `;
   main.insertAdjacentHTML("beforeend", popoverPersoonlijkProfiel);
 
@@ -96,7 +99,7 @@ async function haalDataOp() {
   let popoverFunFacts = `
   <div popover id="popover-fun-facts" class="popovers">
   <h2>Fun Facts</h2>
-  <button popovertarget="popover-tech" popovertargetaction="hide">X</button>
+  <button popovertarget="popover-fun-facts" popovertargetaction="hide">X</button>
   <div class="text-veld1">
     <p><strong>Schoenmaat:</strong> ${dataPersonInDeMinor.shoe_size}</p>
     <p><strong>Profiel-ID:</strong> ${dataPersonInDeMinor.id}</p>
@@ -107,6 +110,7 @@ async function haalDataOp() {
 }
 haalDataOp();
 
+// Dit gedeelte staat voor de audio
 const snaarLowE = document.getElementById("snaar-low-e");
 const snaarA = document.getElementById("snaar-a");
 const snaarD = document.getElementById("snaar-d");
@@ -149,4 +153,32 @@ snaarB.addEventListener("mouseover", () => {
 snaarHighE.addEventListener("mouseover", () => {
   snaarHighESound.currentTime = 0;
   snaarHighESound.play();
+});
+
+// hier laat ik de gitaat veranderen (darkmode) door een class toe te voegen aan de body
+const buttonModeSwitch = document.getElementById("darkmode-toggle");
+
+function toggleElectricGuitar() {
+  let body = document.querySelector("body");
+  body.classList.toggle("electric");
+}
+
+buttonModeSwitch.addEventListener("click", () => {
+  toggleElectricGuitar();
+});
+
+const changeID = document.getElementById("mijnInvoer");
+const confirmKnop = document.getElementById("mijnKnop");
+
+confirmKnop.addEventListener("click", () => {
+  id = changeID.value;
+  url = base + endpoint + id;
+
+  document.querySelectorAll("[popover]").forEach((popover) => {
+    if (popover.id !== "leerdoelen") {
+      popover.remove();
+    }
+  });
+
+  haalDataOp();
 });
