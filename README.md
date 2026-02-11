@@ -37,3 +37,39 @@ Ook heb ik gewerkt aan het toevoegen van geluid via JavaScript. Ik heb verschill
 Vandaag heb ik vooral geleerd hoe ik geluid kan koppelen aan een mouseover met behulp van JavaScript.
 
 Morgen ga ik verder met het afmaken van de light- en dark mode en ga ik de API koppelen aan mijn project.
+
+## Dag 5
+
+Vandaag heb ik gewerkt aan het inladen van de API en aan het behouden van de responsiveness van de website. Vanuit JavaScript kan ik nu het ID aanpassen, waardoor er telkens een andere persoon wordt weergegeven.
+
+Het correct inladen van de API kostte bijna een hele dag. De popovers stonden al in HTML, maar om de data erin te tonen moest deze via JavaScript in het HTML-bestand worden geladen.
+
+Tijdens dit proces heb ik geleerd dat wanneer je een API in een popover wilt gebruiken, je de data via HTML en JavaScript moet verwerken.
+
+Morgen ga ik een invoerveld maken waarmee ik het ID in de JavaScript-code kan aanpassen en ga ik werken aan een light- en darkmode-switch.
+
+## Dag 6
+
+Vandaag heb ik gewerkt aan een light- en darkmode-switch en aan een invoerveld waarin gebruikers hun ID kunnen invoeren om via de API hun gegevens te laden. Beide onderdelen kostten ongeveer een halve dag. Het invoerveld vervangt de ID-variabele in JavaScript en maakt vervolgens automatisch een nieuwe URL aan.
+
+Tijdens dit werk heb ik geleerd hoe ik een geanimeerde toggle kan maken en hoe ik invoer kan verwerken om dynamische links te genereren.
+
+Morgen ga ik verder met het afmaken van de light- en darkmode en zal ik de API volledig koppelen.
+
+Conventies
+
+- Naamgeveing moet in het engels
+
+## Bronnen
+
+YouTube. (z.d.). *Gitaar Stemmen op gehoor* [Video]. YouTube. [https://www.youtube.com/watch?v=3Y-uaN_ZKHU](https://www.youtube.com/watch?v=3Y-uaN_ZKHU&utm_source=chatgpt.com) 
+
+*Titel van de pagina*. (z.d.). Geraadpleegd op 11 februari 2026, van https://www.google.com/search?q=light+and+darkmode+button+in+html+cess&rlz=1C5CHFA_enNL887NL888&oq=light+and+darkmode+button+in+html+cess…
+
+Claude AI
+
+https://claude.ai/share/38b63e6f-ebc1-416c-a1fe-ba27c773521e
+
+https://claude.ai/share/1663da64-640c-45c0-bd03-3c50b331e4ed
+
+https://claude.ai/share/c11862c8-491c-4bfa-9ccf-fe22d11b592a
