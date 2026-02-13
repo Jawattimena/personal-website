@@ -74,22 +74,17 @@ Dit duurde langer dan ik had verwacht aangezien ik nog nooit deze code’s heb g
 voor de eis 2 themas heb ik er voor gekozen om in plats van light en dark mode mijn elektrische en akoestische gitaar te maken. Mijn akoestische gitaar is toevallig zwart en mijn electrisch gitaar is toevallig wit.
 
 <img width="600" height="600" alt="gitaarblk" src="https://github.com/user-attachments/assets/c789661e-9e68-4088-9602-536ca117291c" />
+<img width="1200" height="1200" alt="gitaarwt" src="https://github.com/user-attachments/assets/2dec4542-1c8a-4fa1-af14-649802173107" />
+<img width="971" height="934" alt="gitaarblkweb" src="https://github.com/user-attachments/assets/b46809f2-ed68-484d-9a5b-e213fcaaad8b" />
+<img width="853" height="898" alt="gitaarwtweb" src="https://github.com/user-attachments/assets/5b5ce8d9-6f02-429a-a48f-65d39c694fc7" />
 
-![image.png](attachment:74a2c414-278c-4a2f-958c-c2f20ae137ca:image.png)
-
-![Screenshot 2026-02-13 at 11.51.38.png](attachment:0d2b2ee9-d2fb-4d05-9a1a-4272151aaa09:Screenshot_2026-02-13_at_11.51.38.png)
-
-![image.png](attachment:82f40ef9-f5c0-4df5-8545-3851dddb0050:image.png)
-
-![Screenshot 2026-02-13 at 11.51.50.png](attachment:852ac140-df57-487e-bf46-58b6f2ca1940:Screenshot_2026-02-13_at_11.51.50.png)
 
 Helaas had ik niet genoeg tijd om de electrische gitaar vorm te geven dus heb ik het bij alleen  de achtergrond gehouden. aangezien mijn leerdoel animeren is wilde ik een knop maken die toch een kleine animatie had. het is heel subtiel maar wel leuk. Het doel was om mijn snaren te animeren maar na met Sanne gesproken te hebben bleek het toch erg geavanceerd waardoor dat heel wat tijd zou kosten voor mij. 
 
 Voor de light en dark mode had ik voorheen ook echt de light en darkmode functie gebruikt. Dit zorgde er wel voor dat ik de light en dark mode alleen triggerde als mijn computer op light of dark mode stond. Omdat ik een knop wilde maken die de light en dark mode bestuurde heb ik het anders moeten oplossen. In plaats van de light en dark mode functie geeft de knop met behulp van JavaScript de body een class.
 
-![Screenshot 2026-02-13 at 11.57.49.png](attachment:c965398e-dc9c-4fe4-b768-b1b75e621ecc:Screenshot_2026-02-13_at_11.57.49.png)
-
-![Screenshot 2026-02-13 at 11.59.39.png](attachment:f5701e5b-2814-4703-9da1-be14e6a0f280:Screenshot_2026-02-13_at_11.59.39.png)
+<img width="734" height="195" alt="code1" src="https://github.com/user-attachments/assets/97c2c234-3203-4da3-a2f9-6fb63c2663a2" />
+<img width="632" height="657" alt="code2" src="https://github.com/user-attachments/assets/273be701-479a-46c7-8c61-522e0600422a" />
 
 Deze class heeft andere styling waardoor de originele kleuren overrulled worden. Hier door kon ik met behulp van de knop de light en dark mode veranderen.
 
@@ -99,21 +94,20 @@ Ik zelf nooit blok tech gevolgd dus ik heb ook nog nooit gewerkt met een api dus
 
 Om de API in te laden heb ik deze code gebruikt.
 
-![Screenshot 2026-02-13 at 12.02.29.png](attachment:f25cc7a5-f365-4788-9da7-20e3695e9c22:Screenshot_2026-02-13_at_12.02.29.png)
+<img width="476" height="123" alt="code3" src="https://github.com/user-attachments/assets/0c812f6c-8e6a-4332-a492-e7db78c7a859" />
 
 Later kreeg ik wel te horen van Sanne dat ik niet perse hoeft te filteren maar dat het ook kon met /person/id.
 
 maar goed ik heb het uiteindelijk op deze manier opgelost. Door dit stukje code heb ik mijn API kunnen inladen maar ik wilde dat iedereen zijn of haar api con zien dus heb ik er een invoerveld aan toegevoegd. Die ik verbonden heb met JavaScript.
 
-![Screenshot 2026-02-13 at 12.05.55.png](attachment:4fdd20e7-c65f-4532-8c34-5b1efdcf636b:Screenshot_2026-02-13_at_12.05.55.png)
-
-![Screenshot 2026-02-13 at 12.06.22.png](attachment:d0d3c23a-8473-4f84-b1e3-394a4ad02b60:Screenshot_2026-02-13_at_12.06.22.png)
+<img width="717" height="84" alt="code4" src="https://github.com/user-attachments/assets/c6207fd5-d296-4dda-8b44-2e10080c3a6f" />
+<img width="581" height="303" alt="code5" src="https://github.com/user-attachments/assets/f7b22970-6453-4d50-b496-0fb201a07c7e" />
 
 De JavaScript leest dan wat er ingevoerd word en na dat de persoon op OK klikt voert hij de handelingen uit. hij veranderd dan de ingevoerde data naar het id en veranderd daarmee dan de data die weergegeven worden.
 
 Ik wilde deze data laten weergeven in de popovers. Popovers kunnen simpelweg in HTML maar als ik het wil manipuleren met JavaScript moest het toch in JavaScript.
 
-![Screenshot 2026-02-13 at 12.10.24.png](attachment:22bcb0cc-bab3-4dc1-b321-50cc9da3d4aa:Screenshot_2026-02-13_at_12.10.24.png)
+<img width="930" height="1257" alt="code6" src="https://github.com/user-attachments/assets/ec5523d5-d015-4206-ad37-caa49f4ad17a" />
 
 Ik laat de HTML code inladen door JavaScript als er op een snaar (knop) word geklikt met de juiste data. Helaas was het toch meer JavaScript dan ik had gedacht maar zo ver ik weet was het niet anders.
 
