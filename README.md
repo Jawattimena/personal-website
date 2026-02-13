@@ -73,6 +73,8 @@ Dit duurde langer dan ik had verwacht aangezien ik nog nooit deze code’s heb g
 
 voor de eis 2 themas heb ik er voor gekozen om in plats van light en dark mode mijn elektrische en akoestische gitaar te maken. Mijn akoestische gitaar is toevallig zwart en mijn electrisch gitaar is toevallig wit.
 
+<img width="600" height="600" alt="gitaarblk" src="https://github.com/user-attachments/assets/c789661e-9e68-4088-9602-536ca117291c" />
+
 ![image.png](attachment:74a2c414-278c-4a2f-958c-c2f20ae137ca:image.png)
 
 ![Screenshot 2026-02-13 at 11.51.38.png](attachment:0d2b2ee9-d2fb-4d05-9a1a-4272151aaa09:Screenshot_2026-02-13_at_11.51.38.png)
