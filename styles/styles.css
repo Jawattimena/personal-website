@@ -304,8 +304,7 @@ label {
   align-items: center;
   background-color: #ebebee;
   border-radius: 200px;
-  box-shadow: inset 0px 3px 7px rgba(0, 0, 0, 0.3),
-    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0px 3px 7px rgba(0, 0, 0, 0.3), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
   cursor: pointer;
   justify-self: center;
 }
@@ -409,8 +408,7 @@ input:checked + label .electric-guitar {
   background-color: white;
   padding: 1em;
   border-radius: 3em;
-  box-shadow: inset 0px 3px 7px rgba(0, 0, 0, 0.3),
-    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0px 3px 7px rgba(0, 0, 0, 0.3), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
   border: none;
   width: 7em;
 }
@@ -424,8 +422,7 @@ input:checked + label .electric-guitar {
 
   background: white;
 
-  box-shadow: inset 0px 3px 7px rgba(0, 0, 0, 0.3),
-    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0px 3px 7px rgba(0, 0, 0, 0.3), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
 
   color: black;
 }

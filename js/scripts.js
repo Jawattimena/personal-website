@@ -167,6 +167,7 @@ buttonModeSwitch.addEventListener("click", () => {
   toggleElectricGuitar();
 });
 
+// hier verander ik de id
 const changeID = document.getElementById("mijnInvoer");
 const confirmKnop = document.getElementById("mijnKnop");
 
