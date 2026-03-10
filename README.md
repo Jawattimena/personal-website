@@ -37,3 +37,94 @@ Ook heb ik gewerkt aan het toevoegen van geluid via JavaScript. Ik heb verschill
 Vandaag heb ik vooral geleerd hoe ik geluid kan koppelen aan een mouseover met behulp van JavaScript.
 
 Morgen ga ik verder met het afmaken van de light- en dark mode en ga ik de API koppelen aan mijn project.
+
+## Dag 5
+
+Vandaag heb ik gewerkt aan het inladen van de API en aan het behouden van de responsiveness van de website. Vanuit JavaScript kan ik nu het ID aanpassen, waardoor er telkens een andere persoon wordt weergegeven.
+
+Het correct inladen van de API kostte bijna een hele dag. De popovers stonden al in HTML, maar om de data erin te tonen moest deze via JavaScript in het HTML-bestand worden geladen.
+
+Tijdens dit proces heb ik geleerd dat wanneer je een API in een popover wilt gebruiken, je de data via HTML en JavaScript moet verwerken.
+
+Morgen ga ik een invoerveld maken waarmee ik het ID in de JavaScript-code kan aanpassen en ga ik werken aan een light- en darkmode-switch.
+
+## Dag 6
+
+Vandaag heb ik gewerkt aan een light- en darkmode-switch en aan een invoerveld waarin gebruikers hun ID kunnen invoeren om via de API hun gegevens te laden. Beide onderdelen kostten ongeveer een halve dag. Het invoerveld vervangt de ID-variabele in JavaScript en maakt vervolgens automatisch een nieuwe URL aan.
+
+Tijdens dit werk heb ik geleerd hoe ik een geanimeerde toggle kan maken en hoe ik invoer kan verwerken om dynamische links te genereren.
+
+Morgen ga ik verder met het afmaken van de light- en darkmode en zal ik de API volledig koppelen.
+
+Conventies
+
+- Naamgeveing moet in het engels
+
+## WEEK 2
+
+Deze week heb ik gewerkt aan het maken van:
+
+- light en darkmode
+- API inladen
+
+Dit duurde langer dan ik had verwacht aangezien ik nog nooit deze code’s heb geschreven, dus het was veel uitzoekwerk voor mij.
+
+### Light en Dark mode
+
+voor de eis 2 themas heb ik er voor gekozen om in plats van light en dark mode mijn elektrische en akoestische gitaar te maken. Mijn akoestische gitaar is toevallig zwart en mijn electrisch gitaar is toevallig wit.
+
+<img width="600" height="600" alt="gitaarblk" src="https://github.com/user-attachments/assets/c789661e-9e68-4088-9602-536ca117291c" />
+<img width="1200" height="1200" alt="gitaarwt" src="https://github.com/user-attachments/assets/2dec4542-1c8a-4fa1-af14-649802173107" />
+<img width="971" height="934" alt="gitaarblkweb" src="https://github.com/user-attachments/assets/b46809f2-ed68-484d-9a5b-e213fcaaad8b" />
+<img width="853" height="898" alt="gitaarwtweb" src="https://github.com/user-attachments/assets/5b5ce8d9-6f02-429a-a48f-65d39c694fc7" />
+
+
+Helaas had ik niet genoeg tijd om de electrische gitaar vorm te geven dus heb ik het bij alleen  de achtergrond gehouden. aangezien mijn leerdoel animeren is wilde ik een knop maken die toch een kleine animatie had. het is heel subtiel maar wel leuk. Het doel was om mijn snaren te animeren maar na met Sanne gesproken te hebben bleek het toch erg geavanceerd waardoor dat heel wat tijd zou kosten voor mij. 
+
+Voor de light en dark mode had ik voorheen ook echt de light en darkmode functie gebruikt. Dit zorgde er wel voor dat ik de light en dark mode alleen triggerde als mijn computer op light of dark mode stond. Omdat ik een knop wilde maken die de light en dark mode bestuurde heb ik het anders moeten oplossen. In plaats van de light en dark mode functie geeft de knop met behulp van JavaScript de body een class.
+
+<img width="734" height="195" alt="code1" src="https://github.com/user-attachments/assets/97c2c234-3203-4da3-a2f9-6fb63c2663a2" />
+<img width="632" height="657" alt="code2" src="https://github.com/user-attachments/assets/273be701-479a-46c7-8c61-522e0600422a" />
+
+Deze class heeft andere styling waardoor de originele kleuren overrulled worden. Hier door kon ik met behulp van de knop de light en dark mode veranderen.
+
+### API
+
+Ik zelf nooit blok tech gevolgd dus ik heb ook nog nooit gewerkt met een api dus dat was voor mij ook weer nieuwe code.
+
+Om de API in te laden heb ik deze code gebruikt.
+
+<img width="476" height="123" alt="code3" src="https://github.com/user-attachments/assets/0c812f6c-8e6a-4332-a492-e7db78c7a859" />
+
+Later kreeg ik wel te horen van Sanne dat ik niet perse hoeft te filteren maar dat het ook kon met /person/id.
+
+maar goed ik heb het uiteindelijk op deze manier opgelost. Door dit stukje code heb ik mijn API kunnen inladen maar ik wilde dat iedereen zijn of haar api con zien dus heb ik er een invoerveld aan toegevoegd. Die ik verbonden heb met JavaScript.
+
+<img width="717" height="84" alt="code4" src="https://github.com/user-attachments/assets/c6207fd5-d296-4dda-8b44-2e10080c3a6f" />
+<img width="581" height="303" alt="code5" src="https://github.com/user-attachments/assets/f7b22970-6453-4d50-b496-0fb201a07c7e" />
+
+De JavaScript leest dan wat er ingevoerd word en na dat de persoon op OK klikt voert hij de handelingen uit. hij veranderd dan de ingevoerde data naar het id en veranderd daarmee dan de data die weergegeven worden.
+
+Ik wilde deze data laten weergeven in de popovers. Popovers kunnen simpelweg in HTML maar als ik het wil manipuleren met JavaScript moest het toch in JavaScript.
+
+<img width="930" height="1257" alt="code6" src="https://github.com/user-attachments/assets/ec5523d5-d015-4206-ad37-caa49f4ad17a" />
+
+Ik laat de HTML code inladen door JavaScript als er op een snaar (knop) word geklikt met de juiste data. Helaas was het toch meer JavaScript dan ik had gedacht maar zo ver ik weet was het niet anders.
+
+### Conclusie
+
+Verder heb ik wel veel geleerd op het gebied van hoe JS met HTML kan samen werken en hoe je doormiddel van JS de HTML kan manipuleren om bijvoorbeeld een andere styling te geven door CSS. Daarnaast vind ik het gebruiken van API ook leuk om te doen omdat alle informatie geautomatiseerd is.
+
+## Bronnen
+
+YouTube. (z.d.). *Gitaar Stemmen op gehoor* [Video]. YouTube. [https://www.youtube.com/watch?v=3Y-uaN_ZKHU](https://www.youtube.com/watch?v=3Y-uaN_ZKHU&utm_source=chatgpt.com) 
+
+*Titel van de pagina*. (z.d.). Geraadpleegd op 11 februari 2026, van https://www.google.com/search?q=light+and+darkmode+button+in+html+cess&rlz=1C5CHFA_enNL887NL888&oq=light+and+darkmode+button+in+html+cess…
+
+Claude AI
+
+https://claude.ai/share/38b63e6f-ebc1-416c-a1fe-ba27c773521e
+
+https://claude.ai/share/1663da64-640c-45c0-bd03-3c50b331e4ed
+
+https://claude.ai/share/c11862c8-491c-4bfa-9ccf-fe22d11b592a
